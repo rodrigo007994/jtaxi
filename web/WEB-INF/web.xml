@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>jtaxi</display-name>
+  
+<servlet>
+  	<servlet-name>welcome</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>welcome</servlet-name>
+  	<url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>welcome</servlet-name>
+  	<url-pattern></url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+  	<servlet-name>rights</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.Rights</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>rights</servlet-name>
+  	<url-pattern>/rights</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>privacy</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.Privacy</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>privacy</servlet-name>
+  	<url-pattern>/privacy</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>registration</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>registration</servlet-name>
+  	<url-pattern>/registration</url-pattern>
+  </servlet-mapping>
+  
+  
+ <servlet>
+  	<servlet-name>xhrreg</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.XhrRegistration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>xhrreg</servlet-name>
+  	<url-pattern>/xhrreg</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>xhrlogin</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.XhrLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>xhrlogin</servlet-name>
+  	<url-pattern>/xhrlogin</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>xhrlogout</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.XhrLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>xhrlogout</servlet-name>
+  	<url-pattern>/xhrlogout</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+  	<servlet-name>home</servlet-name>
+  	<servlet-class>com.zencherry.jtaxi.Home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>home</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+	<servlet-name>ask</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.Ask</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ask</servlet-name>
+	<url-pattern>/ask</url-pattern>
+</servlet-mapping>
+
+
+  <servlet>
+	<servlet-name>rides</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.Rides</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>rides</servlet-name>
+	<url-pattern>/rides</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+<servlet>
+	<servlet-name>ongoingride</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.OngoingRide</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ongoingride</servlet-name>
+	<url-pattern>/ongoingride</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>driverongoingride</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.DriverOngoingRide</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>driverongoingride</servlet-name>
+	<url-pattern>/driverongoingride</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>xhrsetride</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.XhrSetRide</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>xhrsetride</servlet-name>
+	<url-pattern>/xhrsetride</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>xhrtie</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.XhrTie</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>xhrtie</servlet-name>
+	<url-pattern>/xhrtie</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>xhrcanceltaxi</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.XhrCancelTaxi</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>xhrcanceltaxi</servlet-name>
+	<url-pattern>/xhrcanceltaxi</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>xhrdrivercanceltaxi</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.XhrDriverCancelTaxi</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>xhrdrivercanceltaxi</servlet-name>
+	<url-pattern>/xhrdrivercanceltaxi</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+<servlet>
+	<servlet-name>clienthistoric</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.ClientHistoric</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>clienthistoric</servlet-name>
+	<url-pattern>/clienthistoric</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>driverhistoric</servlet-name>
+	<servlet-class>com.zencherry.jtaxi.DriverHistoric</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>driverhistoric</servlet-name>
+	<url-pattern>/driverhistoric</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>
+
+
